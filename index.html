@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clickable Multi-Section Image</title>
+    <title>Centered Clickable Multi-Section Image</title>
     <style>
-        /* Reset body and html margins for a seamless full-screen view */
+        /* Reset body and html margins */
         body, html {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         /* Container for the four image sections */
         .image-container {
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            width: 100vw;
-            height: 100vh;
+            grid-template-rows: 20% 30% 25% 25%; /* Adjust row heights as needed */
+            width: 50vw; /* Adjust width to match the image's total width */
+            max-width: 800px; /* Optional: limit the max width for larger screens */
         }
 
-        /* Ensure each image section fills its grid cell */
+        /* Style each image section to fit the grid cell */
         .image-container a img {
             width: 100%;
             height: 100%;
@@ -34,19 +37,19 @@
     <div class="image-container">
         <!-- Top section -->
         <a href="https://link1.com" target="_blank">
-            <img src="./images/banner_sc_events.png" alt="Top Section Link">
+            <img src="image-top.png" alt="Top Section Link">
         </a>
         <!-- Middle top section -->
         <a href="https://link2.com" target="_blank">
-            <img src="./images/sc_events_1.png" alt="Middle Top Section Link">
+            <img src="image-middle-top.png" alt="Middle Top Section Link">
         </a>
         <!-- Middle bottom section -->
         <a href="https://link3.com" target="_blank">
-            <img src="./images/sc_events_2.png" alt="Middle Bottom Section Link">
+            <img src="image-middle-bottom.png" alt="Middle Bottom Section Link">
         </a>
         <!-- Bottom section -->
         <a href="https://link4.com" target="_blank">
-            <img src="./images/sc_events_link.png" alt="Bottom Section Link">
+            <img src="image-bottom.png" alt="Bottom Section Link">
         </a>
     </div>
 
