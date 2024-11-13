@@ -24,8 +24,7 @@
         /* Container for the split image layout */
         .image-container {
             display: grid;
-            grid-template-columns: 1fr;  /* Single column layout */
-            grid-template-rows: 1fr 1fr 1fr 1fr; /* Four equal rows for each image slice */
+            grid-template-rows: 25% 25% 25% 25%; /* Four equal rows, each 25% of height */
             width: 100vw; /* Full viewport width */
             height: 100vh; /* Full viewport height */
         }
@@ -34,7 +33,6 @@
         .image-container img {
             width: 100%; /* Ensures each image takes full width */
             height: 100%; /* Ensures each image takes full height of its grid cell */
-            object-fit: cover; /* Ensures each image fills its space */
             display: block;
         }
     </style>
