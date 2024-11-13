@@ -20,6 +20,19 @@
             height: 100vh; /* Full viewport height */
             width: auto;    /* Maintain aspect ratio */
         }
+
+           /* Adjustments for mobile devices */
+        @media (max-width: 768px) {
+            .image-container {
+                width: 100vw; /* Full width on mobile */
+                max-width: none; /* Remove max-width constraint */
+                height: auto; /* Allow height to adjust automatically */
+            }
+
+            .image-container img {
+                object-fit: contain; /* Ensure each image fits without cropping */
+            }
+        }
     </style>
 </head>
 <body>
