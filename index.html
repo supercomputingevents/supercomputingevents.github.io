@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Supercomputing Events - Gokcen Kestor  </title>
     <style>
- 
         /* CSS Reset for cross-browser consistency */
         * {
             margin: 0;
@@ -13,21 +12,22 @@
             box-sizing: border-box;
         }
 
-                /* Set up the body and html to take full height and center content */
+        /* Set up the body and html to take full height and center content */
         body, html {
-            height: 100dvh; /* Dynamic viewport height for Safari consistency */
+            height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             background-color: #104e57; /* Set the desired background color */
+            overflow: hidden; /* Hide any potential scroll bars */
         }
 
         /* Container for the four image sections */
         .image-container {
             display: grid;
             grid-template-rows: 18% 32% 32% 18%; /* Define the row proportions */
-            width: 80vw; /* Set width relative to viewport */
-            max-width: 800px; /* Optional: limit the max width for larger screens */
+            width: 100%; /* Set full width */
+            max-width: 800px; /* Limit the max width for larger screens */
             height: 100vh; /* Ensure it fills the entire viewport height */
         }
 
@@ -38,7 +38,6 @@
             object-fit: cover; /* Ensures images cover each grid cell */
             display: block;
         }
-
     </style>
 </head>
 <body>
