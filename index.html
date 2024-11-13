@@ -24,16 +24,18 @@
         /* Container for the split image layout */
         .image-container {
             display: grid;
-            grid-template-rows: 1fr 1fr 1fr 1fr; /* Four equal rows */
-            width: auto; 
+            grid-template-columns: 1fr;  /* Single column layout */
+            grid-template-rows: 1fr 1fr 1fr 1fr; /* Four equal rows for each image slice */
+            width: 100vw; /* Full viewport width */
             height: 100vh; /* Full viewport height */
         }
 
         /* Each image piece */
         .image-container img {
-            width: 100vw;
-            height: 100%; /* Each piece takes up the full row height */
+            width: 100%; /* Ensures each image takes full width */
+            height: 100%; /* Ensures each image takes full height of its grid cell */
             object-fit: cover; /* Ensures each image fills its space */
+            display: block;
         }
     </style>
 </head>
