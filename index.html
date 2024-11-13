@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gokcen</title>
+    <title>Gokcen-1</title>
     <style>
         /* Reset and full height setup */
         * {
@@ -25,7 +25,8 @@
         .image-container {
             display: grid;
             grid-template-rows: 25% 25% 25% 25%; /* Four equal rows, each 25% of height */
-            width: 100vw; /* Full viewport width */
+            width: auto; /* Let container adjust to image width */
+            max-width: 100vh; /* Limit width to maintain aspect ratio */
             height: 100vh; /* Full viewport height */
         }
 
@@ -33,6 +34,7 @@
         .image-container img {
             width: 100%; /* Ensures each image takes full width */
             height: 100%; /* Ensures each image takes full height of its grid cell */
+            object-fit: cover; /* Fill each section without stretching */
             display: block;
         }
     </style>
